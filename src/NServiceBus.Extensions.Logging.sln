@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NServiceBus.Extensions.Logg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBus.Extensions.Logging.Tests", "NServiceBus.Extensions.Logging.Tests\NServiceBus.Extensions.Logging.Tests.csproj", "{4347477C-C221-4A2C-8499-BD22937B30B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBus.Extensions.Logging.NLog.AcceptanceTests", "NServiceBus.Extensions.Logging.NLog.AcceptanceTests\NServiceBus.Extensions.Logging.NLog.AcceptanceTests.csproj", "{C6860C0A-C188-4929-A824-8BC4C011CA14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4347477C-C221-4A2C-8499-BD22937B30B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4347477C-C221-4A2C-8499-BD22937B30B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4347477C-C221-4A2C-8499-BD22937B30B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6860C0A-C188-4929-A824-8BC4C011CA14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6860C0A-C188-4929-A824-8BC4C011CA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6860C0A-C188-4929-A824-8BC4C011CA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6860C0A-C188-4929-A824-8BC4C011CA14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
