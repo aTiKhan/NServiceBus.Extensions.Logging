@@ -1,5 +1,11 @@
 namespace NServiceBus.Extensions.Logging
 {
+    public class ExtensionLogging<T> : NServiceBus.Logging.LoggingFactoryDefinition
+        where T : Microsoft.Extensions.Logging.ILoggerFactory, new ()
+    {
+        public ExtensionLogging() { }
+        protected override NServiceBus.Logging.ILoggerFactory GetLoggingFactory() { }
+    }
     public class ExtensionsLoggerFactory : NServiceBus.Logging.ILoggerFactory
     {
         public ExtensionsLoggerFactory(Microsoft.Extensions.Logging.ILoggerFactory loggerFactory) { }

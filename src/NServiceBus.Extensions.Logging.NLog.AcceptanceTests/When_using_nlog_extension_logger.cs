@@ -17,7 +17,7 @@
             config.AddRuleForAllLevels(memoryTarget);
             LogManager.Configuration = config;
             
-            NsbLogManager.UseFactory(new ExtensionsLoggerFactory(new NLogLoggerFactory()));
+            NsbLogManager.Use<ExtensionLogging<NLogLoggerFactory>>();
             
             var endpointConfiguration = new EndpointConfiguration("LoggingTests");
             endpointConfiguration.EnableInstallers();
