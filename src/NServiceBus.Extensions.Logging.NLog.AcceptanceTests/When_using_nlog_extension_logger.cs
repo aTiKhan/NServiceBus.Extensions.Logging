@@ -16,18 +16,18 @@
             var memoryTarget = new NLog.Targets.MemoryTarget();
             config.AddRuleForAllLevels(memoryTarget);
             LogManager.Configuration = config;
-            
+
             NsbLogManager.UseFactory(new ExtensionsLoggerFactory(new NLogLoggerFactory()));
-            
+
             var endpointConfiguration = new EndpointConfiguration("LoggingTests");
             endpointConfiguration.EnableInstallers();
             endpointConfiguration.SendFailedMessagesTo("error");
             endpointConfiguration.UseTransport<LearningTransport>();
             endpointConfiguration.UsePersistence<InMemoryPersistence>();
-            
+
             var endpoint = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
-            
+
             try
             {
                 Assert.IsNotEmpty(memoryTarget.Logs);
