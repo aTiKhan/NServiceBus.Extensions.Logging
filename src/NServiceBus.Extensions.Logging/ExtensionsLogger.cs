@@ -11,9 +11,13 @@ namespace NServiceBus.Extensions.Logging
         }
 
         public bool IsDebugEnabled => logger.IsEnabled(LogLevel.Debug);
+
         public bool IsInfoEnabled => logger.IsEnabled(LogLevel.Information);
+
         public bool IsWarnEnabled => logger.IsEnabled(LogLevel.Warning);
+
         public bool IsErrorEnabled => logger.IsEnabled(LogLevel.Error);
+
         public bool IsFatalEnabled => logger.IsEnabled(LogLevel.Critical);
 
         public void Debug(string message)

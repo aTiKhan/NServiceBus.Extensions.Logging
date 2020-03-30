@@ -11,7 +11,7 @@ namespace NServiceBus.Extensions.Logging
     public class ExtensionsLoggerFactory : ILoggerFactory
     {
         /// <summary>
-        /// Create a NServiceBus `ILoggerFactory` instance based on `Microsoft.Extensions.Logging`.
+        /// Creates an NServiceBus ILoggerFactory instance based on Microsoft.Extensions.Logging.
         /// </summary>
         /// <param name="loggerFactory">An initialized <see cref="Microsoft.Extensions.Logging.ILoggerFactory"/> instance.</param>
         public ExtensionsLoggerFactory(Microsoft.Extensions.Logging.ILoggerFactory loggerFactory)
