@@ -23,7 +23,7 @@
             endpointConfiguration.EnableInstallers();
             endpointConfiguration.SendFailedMessagesTo("error");
             endpointConfiguration.UseTransport<LearningTransport>();
-            endpointConfiguration.UsePersistence<InMemoryPersistence>();
+            endpointConfiguration.UsePersistence<LearningPersistence>();
 
             var endpoint = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
